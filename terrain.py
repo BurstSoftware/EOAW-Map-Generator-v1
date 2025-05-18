@@ -1,6 +1,6 @@
 import numpy as np
 from noise import pnoise2
-from panda3d.core import Geom, GeomNode, GeomTriangles, GeomVertexData, GeomVertexFormat
+from panda3d.core import Geom, GeomNode, GeomTriangles, GeomVertexData, GeomVertexFormat, GeomVertexWriter
 from panda3d.core import NodePath
 
 def generate_heightmap(width, height, scale=100.0, octaves=6, persistence=0.5, lacunarity=2.0):
