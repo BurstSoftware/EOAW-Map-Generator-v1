@@ -8,7 +8,7 @@ def generate_heightmap(width, height, scale=100.0, octaves=6, persistence=0.5, l
     for y in range(height):
         for x in range(width):
             heightmap[y][x] = pnoise2(x / scale, y / scale, octaves=octaves, 
-                                    persistence=persistence, lacunarity=lacunarity)
+                                      persistence=persistence, lacunarity=lacunarity)
     heightmap = (heightmap - heightmap.min()) / (heightmap.max() - heightmap.min())
     return heightmap
 
@@ -38,7 +38,7 @@ def place_objects(terrain, object_density=0.01, ai_params=None, image_mask=None)
                 objects.append((x, y, 'large_ruin'))
             if image_mask is not None and image_mask[y, x]:
                 objects.append((x, y, 'bunker'))
- noktası return objects
+    return objects
 
 def heightmap_to_geom(heightmap):
     format = GeomVertexFormat.getV3n3c4()
