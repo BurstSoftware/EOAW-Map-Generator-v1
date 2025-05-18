@@ -1,5 +1,5 @@
 streamlit>=1.38.0
-panda3d>=1.10.13
+panda3d==1.10.14
 numpy>=1.26.4
 noise>=1.2.2
 matplotlib>=3.8.4
