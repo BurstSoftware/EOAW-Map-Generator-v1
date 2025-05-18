@@ -1,0 +1,8 @@
+streamlit>=1.38.0
+panda3d>=1.10.13
+numpy>=1.26.4
+noise>=1.2.2
+matplotlib>=3.8.4
+opencv-python>=4.9.0.80
+pillow>=10.3.0
+google-cloud-aiplatform>=1.62.0
